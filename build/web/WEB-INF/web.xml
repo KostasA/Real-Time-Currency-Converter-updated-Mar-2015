@@ -52,7 +52,7 @@
     </context-param>
     <context-param>
         <param-name>code</param-name>
-        <param-value>https://github.com/KostasA/Real-Time-Currency-Converter-updated-Mar-2015</param-value>
+        <param-value>https://github.com/KostasA/Real-Time-Currency-Converter-updated-Mar-2015/archive/master.zip</param-value>
     </context-param>
     
     <listener>
