@@ -48,11 +48,11 @@
     
     <context-param>
         <param-name>info</param-name>
-        <param-value>http://www.bbc.com</param-value>
+        <param-value>https://kostasa89dev.wordpress.com/</param-value>
     </context-param>
     <context-param>
         <param-name>code</param-name>
-        <param-value>http://www.reuters.com</param-value>
+        <param-value>https://github.com/KostasA/Real-Time-Currency-Converter-updated-Mar-2015</param-value>
     </context-param>
     
     <listener>
