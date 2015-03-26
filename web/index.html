@@ -15,6 +15,11 @@ and open the template in the editor.
     <script>
         var xmlhttp=new XMLHttpRequest();
         
+        function turnOver(a,b)
+        {
+            return a*b;
+        }
+        
         
         function UpdateData()
         {            
@@ -103,7 +108,7 @@ and open the template in the editor.
             <option value="VND">VND-Vietnamese Dong</option>
             <option value="ZAR">ZAR-South African Ran</option>
         </select>
-        ---->      
+        <img src="switcharrow.png" style="width: 20px;height: 20px;" align="absmiddle">      
         
         <select style="width: 90px" name="final_currency">
             <option value="EUR">EUR-Euro</option>
@@ -173,6 +178,6 @@ and open the template in the editor.
     </form>
     <form name="infoForm" action="infoListener">
          <input style="width: 85px" type="submit" value="info" title="gives the report of the web application">
-    </form>
+    </form>  
     </body>
 </html>
