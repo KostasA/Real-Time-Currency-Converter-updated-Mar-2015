@@ -24,7 +24,7 @@ public class ConversionServlet extends HttpServlet
             Document doc = Jsoup.connect("https://www.google.com/finance/converter?a="+am+"&from="+in+"&to="+fi+"&meta=").get();
             Elements test = doc.select("span");
             String[] p = test.text().split(" ");
-            out.println(p[0]);          
+            out.println(p[0].substring(0,4));          
         } catch (IOException io)
         {
             io.printStackTrace();
