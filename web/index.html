@@ -15,9 +15,12 @@ and open the template in the editor.
     <script>
         var xmlhttp=new XMLHttpRequest();
         
-        function turnOver(a,b)
+        function turnOver()
         {
-            return a*b;
+            var temp;
+            temp = myForm.initial_currency.value;
+            myForm.initial_currency.value=myForm.final_currency.value;
+            myForm.final_currency.value = temp;
         }
         
         
@@ -108,7 +111,7 @@ and open the template in the editor.
             <option value="VND">VND-Vietnamese Dong</option>
             <option value="ZAR">ZAR-South African Ran</option>
         </select>
-        <img src="switcharrow.png" style="width: 20px;height: 20px;" align="absmiddle">      
+        <img src="switcharrow.png" style="width: 20px;height: 20px;" align="absmiddle" onclick="turnOver()">      
         
         <select style="width: 90px" name="final_currency">
             <option value="EUR">EUR-Euro</option>
